@@ -437,6 +437,9 @@
                         </li><br>
                         <li>
                             <a class="customFont" href="/reportDashboard">Report</a>
+                        </li><br>
+                        <li>
+                            <a class="customFont" href="/annoucementDashboard">Announcement</a>
                         </li>
                     </center>
                 </ul>

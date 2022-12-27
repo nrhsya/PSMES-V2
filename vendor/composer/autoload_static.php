@@ -515,8 +515,10 @@ class ComposerStaticInit587b3cc7f8bf0c3f4b90ad0fba2070b5
     );
 
     public static $classMap = array (
+        'App\\Console\\Commands\\RemindUser' => __DIR__ . '/../..' . '/app/Console/Commands/RemindUser.php',
         'App\\Console\\Kernel' => __DIR__ . '/../..' . '/app/Console/Kernel.php',
         'App\\Exceptions\\Handler' => __DIR__ . '/../..' . '/app/Exceptions/Handler.php',
+        'App\\Http\\Controllers\\AnnoucementController' => __DIR__ . '/../..' . '/app/Http/Controllers/AnnoucementController.php',
         'App\\Http\\Controllers\\Auth\\ConfirmPasswordController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/ConfirmPasswordController.php',
         'App\\Http\\Controllers\\Auth\\ForgotPasswordController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/ForgotPasswordController.php',
         'App\\Http\\Controllers\\Auth\\LoginController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/LoginController.php',
@@ -531,6 +533,7 @@ class ComposerStaticInit587b3cc7f8bf0c3f4b90ad0fba2070b5
         'App\\Http\\Controllers\\HomeController' => __DIR__ . '/../..' . '/app/Http/Controllers/HomeController.php',
         'App\\Http\\Controllers\\MarksController' => __DIR__ . '/../..' . '/app/Http/Controllers/MarksController.php',
         'App\\Http\\Controllers\\PSMCoordinatorController' => __DIR__ . '/../..' . '/app/Http/Controllers/PSMCoordinatorController.php',
+        'App\\Http\\Controllers\\ReminderController' => __DIR__ . '/../..' . '/app/Http/Controllers/ReminderController.php',
         'App\\Http\\Controllers\\ReportController' => __DIR__ . '/../..' . '/app/Http/Controllers/ReportController.php',
         'App\\Http\\Controllers\\RubricController' => __DIR__ . '/../..' . '/app/Http/Controllers/RubricController.php',
         'App\\Http\\Controllers\\ScheduleController' => __DIR__ . '/../..' . '/app/Http/Controllers/ScheduleController.php',
@@ -558,6 +561,7 @@ class ComposerStaticInit587b3cc7f8bf0c3f4b90ad0fba2070b5
         'App\\Models\\Schedule' => __DIR__ . '/../..' . '/app/Models/Schedule.php',
         'App\\Models\\ScheduleDateHistory' => __DIR__ . '/../..' . '/app/Models/ScheduleDateHistory.php',
         'App\\Models\\User' => __DIR__ . '/../..' . '/app/Models/User.php',
+        'App\\Models\\annoucement' => __DIR__ . '/../..' . '/app/Models/annoucement.php',
         'App\\Providers\\AppServiceProvider' => __DIR__ . '/../..' . '/app/Providers/AppServiceProvider.php',
         'App\\Providers\\AuthServiceProvider' => __DIR__ . '/../..' . '/app/Providers/AuthServiceProvider.php',
         'App\\Providers\\BroadcastServiceProvider' => __DIR__ . '/../..' . '/app/Providers/BroadcastServiceProvider.php',
@@ -672,6 +676,7 @@ class ComposerStaticInit587b3cc7f8bf0c3f4b90ad0fba2070b5
         'Database\\Seeders\\DatabaseSeeder' => __DIR__ . '/../..' . '/database/seeders/DatabaseSeeder.php',
         'Database\\Seeders\\EvaluationMarkSeeders' => __DIR__ . '/../..' . '/database/seeders/EvaluationMarkSeeders.php',
         'Database\\Seeders\\ScheduleSeeders' => __DIR__ . '/../..' . '/database/seeders/ScheduleSeeders.php',
+        'Database\\Seeders\\UserSeeder' => __DIR__ . '/../..' . '/database/seeders/UserSeeder.php',
         'DeepCopy\\DeepCopy' => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy/DeepCopy.php',
         'DeepCopy\\Exception\\CloneException' => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy/Exception/CloneException.php',
         'DeepCopy\\Exception\\PropertyException' => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy/Exception/PropertyException.php',

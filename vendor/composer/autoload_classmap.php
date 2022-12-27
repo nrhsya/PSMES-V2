@@ -6,8 +6,10 @@ $vendorDir = dirname(__DIR__);
 $baseDir = dirname($vendorDir);
 
 return array(
+    'App\\Console\\Commands\\RemindUser' => $baseDir . '/app/Console/Commands/RemindUser.php',
     'App\\Console\\Kernel' => $baseDir . '/app/Console/Kernel.php',
     'App\\Exceptions\\Handler' => $baseDir . '/app/Exceptions/Handler.php',
+    'App\\Http\\Controllers\\AnnoucementController' => $baseDir . '/app/Http/Controllers/AnnoucementController.php',
     'App\\Http\\Controllers\\Auth\\ConfirmPasswordController' => $baseDir . '/app/Http/Controllers/Auth/ConfirmPasswordController.php',
     'App\\Http\\Controllers\\Auth\\ForgotPasswordController' => $baseDir . '/app/Http/Controllers/Auth/ForgotPasswordController.php',
     'App\\Http\\Controllers\\Auth\\LoginController' => $baseDir . '/app/Http/Controllers/Auth/LoginController.php',
@@ -22,6 +24,7 @@ return array(
     'App\\Http\\Controllers\\HomeController' => $baseDir . '/app/Http/Controllers/HomeController.php',
     'App\\Http\\Controllers\\MarksController' => $baseDir . '/app/Http/Controllers/MarksController.php',
     'App\\Http\\Controllers\\PSMCoordinatorController' => $baseDir . '/app/Http/Controllers/PSMCoordinatorController.php',
+    'App\\Http\\Controllers\\ReminderController' => $baseDir . '/app/Http/Controllers/ReminderController.php',
     'App\\Http\\Controllers\\ReportController' => $baseDir . '/app/Http/Controllers/ReportController.php',
     'App\\Http\\Controllers\\RubricController' => $baseDir . '/app/Http/Controllers/RubricController.php',
     'App\\Http\\Controllers\\ScheduleController' => $baseDir . '/app/Http/Controllers/ScheduleController.php',
@@ -49,6 +52,7 @@ return array(
     'App\\Models\\Schedule' => $baseDir . '/app/Models/Schedule.php',
     'App\\Models\\ScheduleDateHistory' => $baseDir . '/app/Models/ScheduleDateHistory.php',
     'App\\Models\\User' => $baseDir . '/app/Models/User.php',
+    'App\\Models\\annoucement' => $baseDir . '/app/Models/annoucement.php',
     'App\\Providers\\AppServiceProvider' => $baseDir . '/app/Providers/AppServiceProvider.php',
     'App\\Providers\\AuthServiceProvider' => $baseDir . '/app/Providers/AuthServiceProvider.php',
     'App\\Providers\\BroadcastServiceProvider' => $baseDir . '/app/Providers/BroadcastServiceProvider.php',
@@ -163,6 +167,7 @@ return array(
     'Database\\Seeders\\DatabaseSeeder' => $baseDir . '/database/seeders/DatabaseSeeder.php',
     'Database\\Seeders\\EvaluationMarkSeeders' => $baseDir . '/database/seeders/EvaluationMarkSeeders.php',
     'Database\\Seeders\\ScheduleSeeders' => $baseDir . '/database/seeders/ScheduleSeeders.php',
+    'Database\\Seeders\\UserSeeder' => $baseDir . '/database/seeders/UserSeeder.php',
     'DeepCopy\\DeepCopy' => $vendorDir . '/myclabs/deep-copy/src/DeepCopy/DeepCopy.php',
     'DeepCopy\\Exception\\CloneException' => $vendorDir . '/myclabs/deep-copy/src/DeepCopy/Exception/CloneException.php',
     'DeepCopy\\Exception\\PropertyException' => $vendorDir . '/myclabs/deep-copy/src/DeepCopy/Exception/PropertyException.php',

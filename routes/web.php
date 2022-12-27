@@ -8,6 +8,7 @@ use Illuminate\Support\Facades\Auth;
 use App\Http\Controllers\ReportController;
 use App\Http\Controllers\Evaluator\EvaluatorController;
 use App\Http\Controllers\RubricController;
+use App\Http\Controllers\AnnoucementController;
 
 /*
 |--------------------------------------------------------------------------
@@ -217,7 +218,38 @@ Route::get('/', function () {
         return view('manageTop20/studentHomepage');
     });
 
+
+     //route to Annoucement Dashbaord to choose button
+     Route::get('annoucementDashboard', 'App\Http\Controllers\AnnoucementController@AnnoucementPage');
+
+      //route to Evaluator Annoucement Dashbaord to choose button
+      Route::get('EVannoucement', 'App\Http\Controllers\AnnoucementController@EVAnnoucementPage');
+
+        //route to Evaluator Annoucement Dashbaord to choose button
+        Route::get('Stdannoucement', 'App\Http\Controllers\AnnoucementController@StdAnnoucementPage');
+   
+
+       //route to AddannoucementDetails
+       Route::get('AddannoucementDetails',  'App\Http\Controllers\AnnoucementController@create');
     
+  
+    Route::get('/annoucement/AddannoucementDetails', [AnnoucementController::class, 'create']);
+    Route::post('/annoucement/AddannoucementDetails', [AnnoucementController::class, 'store']);
+    
+
+//delete
+Route::get('/annodata/{id}/delete','App\Http\Controllers\AnnoucementController@delete');
+
+Route::get('update/{id}', [AnnoucementController::class, 'EditAnn']);
+
+//route to enable editing function and update data into db
+Route::post('/update/{id}/data',[AnnoucementController::class, 'UpdateAnn']);
+
+
+Route::get('detail/{id}', [AnnoucementController::class, 'detail']);
+
+
+
 //});
 
 //home
@@ -483,7 +515,7 @@ Route::group(['middleware'=>['Student','auth']],function(){
     */
 
     //route to  view fyp details page page
-    Route::get('/view/{id}','App\Http\Controllers\FYPDetailsController@viewFYPDetailsStudent');
+    Route::get('/ViewFYPDetailsStudent','App\Http\Controllers\FYPDetailsController@viewFYPDetailsStudent');
 
 
     /*

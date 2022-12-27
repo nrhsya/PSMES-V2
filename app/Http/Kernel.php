@@ -70,5 +70,6 @@ class Kernel extends HttpKernel
         'Coordinator' => \App\Http\Middleware\PSMCoordinatorMiddleware::class,
         'Student' => \App\Http\Middleware\StudentMiddleware::class,
         'PreventBackHistory' => \App\Http\Middleware\PreventBackHistory::class,
+        'anns' => 'App\Http\Middleware\AnnoucementMiddleware',
     ];
 }

@@ -380,10 +380,6 @@
                             <a class="customFont" href="/dashboard">Home</a>
                         </li><br>
                         <li>
-                    
-                            <a class="customFont" href="/ViewFYPDetailsStudent">FYP Details</a>
-                        </li><br>
-                        <li>
                             <a class="customFont" href="/ViewRubric">Rubric</a>
                         </li><br>
                         <!-- <li>
@@ -392,6 +388,9 @@
                         <li>
                             <a class="customFont" href="/studentEvaluationSchedule">Industry Evaluation</a>
                         </li><br>
+                        <li>
+                            <a class="customFont" href="/Stdannoucement">Announcement</a>
+                        </li>
                     </center>
                 </ul>
             </nav>
