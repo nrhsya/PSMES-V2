@@ -18,13 +18,18 @@ class AnnoucementController extends Controller
     }
 
     public function EVAnnoucementPage(){
-        $anns =\App\Models\annoucement::all();
+        $anns =\App\Models\annoucement::where('annoucement_type', '=', 'Evaluators')
+        ->orwhere('annoucement_type', '=', 'Both')
+        ->get();
+
 
         return view('annoucement.evannoucement',['anns'=> $anns]);
     }
 
     public function StdAnnoucementPage(){
-        $anns =\App\Models\annoucement::all();
+        $anns =\App\Models\annoucement::where('annoucement_type', '=', 'Students')
+        ->orwhere('annoucement_type', '=', 'Both')
+        ->get();
 
         return view('annoucement.stdannoucement',['anns'=> $anns]);
     }
