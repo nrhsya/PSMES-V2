@@ -1,13 +1,14 @@
 <?php
 
-use App\Http\Controllers\PSMCoordinatorController;
-use App\Http\Controllers\StudentController;
-
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Route;
 
 use App\Http\Controllers\ReportController;
-use App\Http\Controllers\Evaluator\EvaluatorController;
+
 use App\Http\Controllers\RubricController;
+use App\Http\Controllers\StudentController;
+use App\Http\Controllers\PSMCoordinatorController;
+use App\Http\Controllers\Evaluator\EvaluatorController;
 use App\Http\Controllers\AnnoucementController;
 
 /*
@@ -262,6 +263,52 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 //Route::get('/psmevaluator', 'EvaluatorController@index')->name('psmevaluator')->middleware('psmevaluator');
 //Route::get('/studentHomepage', 'StudentController@index')->name('student')->middleware('student');
 
+// go to forum page
+Route::get('viewForum', function () {
+    return view('manageForum/viewForum');
+});
+
+// display list of forums
+Route::get('/viewForum','App\Http\Controllers\ForumController@displayForum');
+
+// display details of selected forum
+Route::get('forumDetails', function () {
+    return view('manageForum/forumDetails');
+});
+
+Route::get('/viewForum/{id}/forumDetail','App\Http\Controllers\ForumController@forumDetail');
+
+// filter forum by category
+Route::get('filterCategory','App\Http\Controllers\ForumController@filterCategory');
+
+// create new forum (modal)
+Route::post('/viewForum/createForum', 'App\Http\Controllers\ForumController@createForum');
+
+// edit existing forum (form)
+Route::get('editForum', function () {
+    return view('manageForum/editForum');
+});
+
+Route::get('/viewForum/{id}/edit','App\Http\Controllers\ForumController@edit');
+
+// update forum
+Route::post('/viewForum/{id}/update','App\Http\Controllers\ForumController@update');
+
+// delete forum
+Route::get('/viewForum/{id}/delete','App\Http\Controllers\ForumController@delete');
+
+// reply to forum
+Route::get('forumDetails', function () {
+    return view('manageForum/forumDetails');
+});
+
+Route::post('/forumDetails/replyForum', 'App\Http\Controllers\ReplyController@replyForum');
+
+// display total replies for each forum
+// Route::get('/viewForum','App\Http\Controllers\ForumController@calcReply');
+
+// display all replies for chosen forum
+Route::get('/forumDetails','App\Http\Controllers\ReplyController@listReply');
 
 /*
 |--------------------------------------------------------------------------

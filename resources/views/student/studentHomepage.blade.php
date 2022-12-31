@@ -16,6 +16,7 @@
     <div style="padding:10px;">
         <a id="customButton" href="/studentEvaluationSchedule"><b>Evaluation Schedule</b></a>
         <a id="customButton" href="/ViewRubric"><b>View Rubric</b></a>
+        <a id="customButton" href="/viewForum"><b>View Forum</b></a>
     </div>
 
     
