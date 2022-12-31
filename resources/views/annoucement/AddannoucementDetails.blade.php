@@ -2,7 +2,7 @@
 @extends('layouts.PSMCoordinatorHomepageStyle')
 
 <head>
-    <title>Add Annoucement Details | PSMES</title>
+    <title>Add Announcement Details | PSMES</title>
 </head>
 
 @section('content')
@@ -12,7 +12,7 @@
         <div style="margin: 0px 0px; padding:0px 0px;height:90%; background-color: white;">
         <div style="margin-top: 15px; padding:10px 16px; height:100%;background-color: #F5F5F5;">
           
-            <h2 style="height: 50px;  color: #FFFFFF; font-size: 18px; padding: 10px 10px; background-color:#11ADA4; text-align: center;">Add New Annoucement Details</h2>
+            <h2 style="height: 50px;  color: #FFFFFF; font-size: 18px; padding: 10px 10px; background-color:#11ADA4; text-align: center;">Add New Announcement Details</h2>
 
 
             <a style="margin-top:10px; margin-right:10px; margin-bottom:30px; margin-left:1070px; padding-right:10px; padding-left:10px; padding-bottom: 10px;padding-top:10px;" id="customButton" href="/annoucementDashboard"><b>Close</b></a>

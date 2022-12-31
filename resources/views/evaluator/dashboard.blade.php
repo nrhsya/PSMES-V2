@@ -374,7 +374,7 @@
                             <a class="customFont" href="/viewReminder">Reminder</a>
                         </li><br>
                          <li>
-                            <a class="customFont" href="EVannoucement">Announcement</a>
+                            <a class="customFont" href="/EVannoucement">Announcement</a>
                         </li>
                     </center>
                 </ul>

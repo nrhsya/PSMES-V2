@@ -2,7 +2,7 @@
 @extends('layouts.PSMCoordinatorHomepageStyle')
 
 <head>
-    <title>Edit Annoucement Details | PSMES</title>
+    <title>Edit Announcement Details | PSMES</title>
 </head>
 
 @section('content')
@@ -12,7 +12,7 @@
         <div style="margin: 0px 0px; padding:0px 0px;height:90%; background-color: white;">
         <div style="margin-top: 15px; padding:10px 16px; height:100%;background-color: #F5F5F5;">
           
-            <h2 style="height: 50px;  color: #FFFFFF; font-size: 18px; padding: 10px 10px; background-color:#11ADA4; text-align: center;">Edit Annoucement Details</h2>
+            <h2 style="height: 50px;  color: #FFFFFF; font-size: 18px; padding: 10px 10px; background-color:#11ADA4; text-align: center;">Edit Announcement Details</h2>
 
     <form style="width:100%;" action="/update/{{$anns->id}}/data" method="POST" class="form-group">
     {{csrf_field()}}    
