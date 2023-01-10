@@ -2,7 +2,7 @@
 @extends('layouts.annoucementStyle')
 
 <head>
-    <title>FYP Annoucement Mainpage | PSMES</title>
+    <title>FYP Announcement Mainpage | PSMES</title>
 
    
 
