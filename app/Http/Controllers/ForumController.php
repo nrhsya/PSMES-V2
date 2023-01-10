@@ -77,14 +77,4 @@ class ForumController extends Controller
 
         return view('manageForum/viewForum', ['data_forum' => $data_forum]);
     }
-
-    // calculate total reply for each forum
-    // public function calcReply()
-    // {
-    //     $data_reply = Reply::all()
-    //     ->groupBy('forum_id')
-    //     ->count();
-
-    //     return view('manageForum/viewForum', ['data_reply' => $data_reply]);
-    // }
 }

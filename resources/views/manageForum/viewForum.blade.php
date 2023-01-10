@@ -28,7 +28,6 @@
                 <div class="card mb-3">
                     <div class="card-body">
                         <p class="text-sm">Start your own discussion so that others can join</p>
-                        {{-- <button type="button" class="btn btn-block btn-success" onclick="window.location.href='/createForum'">Start a new discussion</button> --}}
                         <button type="button" class="btn btn-block btn-success" data-coreui-toggle="modal" data-coreui-target="#createForum">Start a new discussion</button>
                     </div>
                 </div>
@@ -43,13 +42,6 @@
                         <button type="button" class="btn btn-outline-danger m-2" onclick="window.location.href='filterCategory'">Industry Evaluation</button>
                     </div>
                 </div>
-
-                {{-- <div class="card mb-3">
-                    <div class="card-body">
-                        <p class="text-sm text-black"><i class="bi bi-star-fill text-warning"></i>  Popular this week</p>
-                        <p class="text-sm text-black"><i class="bi bi-hand-thumbs-up-fill text-success"></i>  All time popular</p>
-                    </div>
-                </div> --}}
             </div>
 
             <div class="col-md-9">
@@ -72,42 +64,21 @@
 
                                     {{-- Posted By --}}
                                     <div class="flex items-center text-sm text-end text-gray-500">
-                                        {{-- <i class="bi bi-person"></i> --}}
                                         Posted by: {{$forum->user->name}}
                                     </div>
 
                                     <div class="flex justify-between">
-
-                                        {{-- Replies --}}
-                                        {{-- <div class="flex space-x-5 text-gray-500">
-                                            <a href="" class="flex items-center space-x-2">
-                                                <span class="text-xs font-bold">148</span>
-                                            </a>
-                                        </div> --}}
-
                                         <div class="flex float-right">
-                                            {{-- Total replies for this post --}}
                                             <a href="viewForum/{{$forum->id}}/forumDetail" class="flex items-center m-2 space-x-2 text-gray-500">
                                                 <strong>
-                                                    {{-- <span class="text-sm text-success">{{$data_reply}}</span> --}}
-                                                    {{-- <span class="text-sm text-success">View Replies</span> --}}
                                                     <i class="bi bi-chat-dots text-success"></i>
                                                 </strong>
                                             </a>
-
-                                            {{-- Reply --}}
-                                            {{-- <a href="" class="flex items-center m-2 space-x-2 text-gray-500">
-                                                <strong>
-                                                <span class="text-sm text-success">Reply</span>
-                                                <i class="bi bi-reply-all-fill text-success"></i>
-                                                </strong>
-                                            </a> --}}
 
                                             {{-- @if ($data_forum->user_id === auth()->id()) --}}
                                                 {{-- Edit button --}}
                                                 <a href="viewForum/{{$forum->id}}/edit" class="flex items-center m-2 space-x-2 text-gray-500">
                                                     <strong>
-                                                    {{-- <span class="text-sm text-primary">Edit</span> --}}
                                                     <i class="bi bi-pencil-square text-primary"></i>
                                                     </strong>
                                                 </a>
@@ -115,7 +86,6 @@
                                                 {{-- Delete Button --}}
                                                 <a href="viewForum/{{$forum->id}}/delete" class="flex items-center m-2 space-x-2 text-gray-500" onClick = "return confirm('Are you sure you want to delete this data?')">
                                                     <strong>
-                                                    {{-- <span class="text-sm text-danger">Delete</span> --}}
                                                     <i class="bi bi-trash text-danger"></i>
                                                     </strong>
                                                 </a>
@@ -171,9 +141,6 @@
                     <div class="mb-3">
                         <label for="exampleFormControlInput1" class="form-label"><b>Description:</b></label>
                         <textarea name="description" class="form-control summernote" id="" cols="30" rows="10"></textarea>
-                        {{-- <div id="editor">
-                            <input name="description" type="text" class="form-control" id="exampleFormControlInput1" placeholder="Forum Description">
-                        </div> --}}
                     </div>
                     
                 </div>

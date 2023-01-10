@@ -386,6 +386,11 @@
                         <li>
                             <a class="customFont" href="/ViewRubric">Rubric</a>
                         </li><br>
+
+                        <li>
+                            <a class="customFont" href="/ViewFYPDetailsStudent">FYP Details</a>
+                        </li><br>
+
                         <!-- <li>
                             <a class="customFont" href="/EvaluationMainPage">Evaluation Details and Mark</a>
                         </li><br> -->
@@ -394,7 +399,7 @@
                         </li><br>
                         <li>
                             <a class="customFont" href="/Stdannoucement">Announcement</a>
-                        </li>
+                        </li><br>
 
                         <li>
                             <a class="customFont" href="/viewForum">Forum</a>
